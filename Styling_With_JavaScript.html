@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling with JS</title>
+    <script src="Styling_With_JavaScript.js" defer></script>
+    <style>
+        .highlighted {
+            background-color: yellow;
+        }
+        .colorChange {
+            color: lightsalmon;
+        }
+        .colorChange2 {
+            color: black;
+        }
+        .changeBackground {
+            background-color: blue;
+        }
+        .changePageBackground {
+            background-color: rgb(194, 0, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box" onclick="highlight()">Click me to change color</div>
+    
+    <div id="box2" onmouseover="changeColor()" onmouseout="changeColorBack()">Hover over me to change color</div>
+    
+    <div>
+        <form onsubmit="changePageColor(event)">
+            <label for="box3">Focus on me to change background color</label>
+            <input id="box3" onfocus="changeBackgroundColor()"></input>
+            <button type="submit" id="box4">Click to Change page Background</button>
+        </form>
+    </div>    
+
+</body>
+</html>
